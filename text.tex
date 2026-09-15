@@ -9,6 +9,7 @@
 \usepackage{upgreek}
 \usepackage{multicol}
 \usepackage{bm}
+\usepackage{url}
 \usepackage{amsmath}
 \usepackage{mdframed}
 \usepackage{listings}
@@ -38,8 +39,8 @@
 \newcommand{\SSS}{{\mathbb{S}}}
 \newcommand{\captionfont}{\tiny}
 
-\usepackage{biblatex} %Imports biblatex package
-\addbibresource{biblio_geosciences.bib,biblio_lou} %Import the bibliography file
+%\usepackage{biblatex} %Imports biblatex package
+%\addbibresource{biblio_geosciences.bib,biblio_lou} %Import the bibliography file
 
 \newcommand{\BoxT}{{\color{teal} \boxplus}}
 \newcommand{\BoxB}{{\color{brown} \boxplus}}
@@ -92,7 +93,7 @@
 %\]
 %where $\nu$ is the kinematic viscosity. \index{general}{Kinematic Viscosity}
 
-We define (see for instance \textcite{maqs06} (2006)) four reference 
+We define (see for instance \cite{maqs06} (2006)) four reference 
 quantities which are relevant for geodynamics\footnote{Note that in the paper 
 the authors conflate $\rho$ and $\tilde{\rho}$ which prevents them from non-dimensionalising all terms as we do here.}:
 \begin{itemize}
@@ -167,7 +168,8 @@ and now multiply each side by $\underline{t}^2 /\underline{l}$:
 {\color{teal} \vec\nabla \cdot \eta (\vec\nabla \vec \upnu + \vec\nabla \vec \upnu ^T)}
 + \frac {\underline{g} \underline{t}^2 }{ \underline{l} }  {\color{teal} \rho \vec{g}}
 \]
-One can recognise in this equation the Reynolds\footnote{\url{https://en.wikipedia.org/wiki/Reynolds_number}} and Froude\footnote{\url{https://en.wikipedia.org/wiki/Froude_number}} 
+One can recognise in this equation the Reynolds\footnote{\url{https://en.wikipedia.org/wiki/Reynolds_number}} 
+and Froude\footnote{\url{https://en.wikipedia.org/wiki/Froude_number}} 
 non-dimensional numbers (the ratio between the inertial and viscous forces, and the 
 ratio between buoyancy and inertial forces respectively). 
 \[
@@ -759,7 +761,7 @@ The authors justify that the gravity is assumed to be constant inside the mantle
 {\color{darkgray}
 The gravitational acceleration, $\vec{g}$, is also taken to be constant. Since the
 acceleration due to gravity, g, does not differ from 10.1 m/s by more than 6\%
-throughout the entire mantle (\textcite{dzan81}, 1981), we will set 
+throughout the entire mantle (\cite{dzan81}, 1981), we will set 
 $\vec{g}= -g \vec{e}_r$, with $g$ constant.
 }
 \end{displayquote}
@@ -788,7 +790,7 @@ It also leads to a different set of equations:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Ita \& King (1994) \label{ss:dimeqs4}}
 
-We start from \textcite{itki94} (1994).
+We start from \cite{itki94} (1994).
 
 \begin{center}
 \fbox{
@@ -1120,10 +1122,10 @@ which I rewrite again hereafter:
 {\color{teal} {\bm \tau} : \vec\nabla \vec\upnu} 
 \end{eqnarray}
 
-However, we read in \textcite{vacp22}: 
+However, we read in \cite{vacp22}: 
 \begin{displayquote}  {\color{darkgray}
 The anelastic liquid approximation (ALA; 
-\textcite{jamc80}, 1980) assumes that lateral density variations are
+\cite{jamc80}, 1980) assumes that lateral density variations are
 small relative to a reference density profile and can be neglected in the mass equation  and energy conservation equation, which instead use the density of the
 depth-dependent reference profile. Only the buoyancy term
 in the momentum equation uses a temperature- and pressure-dependent density, which is approximated using 
@@ -1131,7 +1133,7 @@ a Taylor expansion. }
 \end{displayquote}
 
 
-Also, when we look in \textcite{lezh08} (I come back to this article in Section~\ref{complezh08}):
+Also, when we look in \cite{lezh08} (I come back to this article in Section~\ref{complezh08}):
 \begin{center}
 \fbox{\includegraphics[width=17cm]{images/lezh_01}}
 \end{center}
@@ -1142,7 +1144,7 @@ We find that these are in direct contradiction with the equations of Ita \& King
 
 %------------------------------------------------------------------------
 \subsubsection{TALA}
-We further read in \textcite{itki94}:
+We further read in \cite{itki94}:
 \begin{displayquote}  {\color{darkgray}
 The next simplification of the equations disregards the term 
 containing the material derivative of the nonhydrostatic pressure($P'$)
@@ -1184,14 +1186,14 @@ Let us further investigate the literature:
 \begin{itemize}
 
 
-\item We find a TALA formulation in \textcite{ilkm26} (2026):
+\item We find a TALA formulation in \cite{ilkm26} (2026):
 \begin{center}
 \fbox{\includegraphics[width=8cm]{images/ilkm01}
 \includegraphics[width=8cm]{images/ilkm02}}\\
 \fbox{\includegraphics[width=8cm]{images/ilkm03}}\cite{ilkm26}
 \end{center}
 
-\item Likewise in \textcite{kame22} we find:
+\item Likewise in \cite{kame22} we find:
 \begin{center}
 \fbox{
 \includegraphics[width=8cm]{images/kame22a}
@@ -1202,7 +1204,7 @@ Let us further investigate the literature:
 \fbox{\includegraphics[width=8cm]{images/kame22e}}
 \end{center}
 
-\item Likewise in \textcite{kame22} we find:
+\item Likewise in \cite{kame22} we find:
 \begin{center}
 \fbox{
 \includegraphics[width=8cm]{images/kame25a}
@@ -1236,7 +1238,7 @@ is important in the model (Leng and Zhong, 2008; Alboussière and Ricard, 2013).
 %------------------------------------------------------------------------
 \subsubsection{EBA}
 
-Coming back to \textcite{itki94} we read in the article:
+Coming back to \cite{itki94} we read in the article:
 \begin{displayquote}  {\color{darkgray}
 A further common reduction is known as the extended Boussinesq approximation (EBA).
 Under the EBA, the reference density profile is assumed to be single valued 
@@ -1295,9 +1297,9 @@ EBA equations containing the  Dissipation number ($\Dinb$) are dropped.}
 \end{eqnarray}
 
 
-The Boussinesq approximation is examined in detail in \textcite{spve60} (1960).
+The Boussinesq approximation is examined in detail in \cite{spve60} (1960).
 
-We read in \textcite{tack96} (1996):
+We read in \cite{tack96} (1996):
 \begin{displayquote} {\color{darkgray}
 The Boussinesq approximation [Boussinesq, 1903; Rayleigh, 1916], 
 in which density is assumed constant
@@ -1324,7 +1326,7 @@ conditions,and heating mode.
 For reference we recall again the 101 paper \cite{vacp22}: 
 \begin{displayquote} {\color{darkgray}
 The anelastic liquid approximation (ALA; 
-\textcite{jamc80}, 1980) assumes that lateral density variations are
+\cite{jamc80}, 1980) assumes that lateral density variations are
 small relative to a reference density profile and can be neglected in the mass equation  and energy conservation equation, which instead use the density of the
 depth-dependent reference profile. Only the buoyancy term
 in the momentum equation in Eq. (5) uses a temperature-
@@ -1379,7 +1381,7 @@ pressure means that the computed pressure is the dynamic pressure.
 \Gamma = \frac{\alpha K_s}{\rho_r C_p}
 \]
 
-In \textcite{jamc80} (1980) we find:
+In \cite{jamc80} (1980) we find:
 \[
 \Gamma = \frac{\alpha K_s}{\rho C_p} = \frac{\alpha K_T } {\rho C_v}
 \]
@@ -1990,9 +1992,9 @@ is the surface temperature, for example:
 
 check geodynamics syllabus, and do relevant exercises!
 
-\fullcite{wiad23}
+\cite{wiad23}
 
-See section 2.2 of \fullcite{zhyu96b}
+See section 2.2 of \cite{zhyu96b}
 
 
 %-----------------------------------------
@@ -2026,7 +2028,7 @@ $B_0' = (\partial B/\partial p)_{T=cst}$ is the pressure derivative of the bulk 
 
 \subsection{Thermodynamical quantities}
 
-In \textcite{gadb20} we find:
+In \cite{gadb20} we find:
 \begin{itemize}
 \item the thermal expansivity, describing how much the material
 expands due to temperature increases at constant pressure:
@@ -2187,7 +2189,7 @@ In what follows we assume for simplicity that the computational domain does not
 deform and that boundary conditions are free-slip on all sides (i.e.
 there is not flux of material through the boundaries, i.e. $\vec\upnu\cdot \vec{n}=0$).
 
-In \textcite{lezh08} (2008):
+In \cite{lezh08} (2008):
 \begin{displayquote}
 {\color{darkgray}
 It has been shown that the total viscous heating and adiabatic heating are exactly 
@@ -2204,7 +2206,7 @@ of compressible mantle convection.
 %============================================
 \subsection{under BA and EBA approximations}
 
-Following \textcite{lezh08} (2008), we take the dot product of the momentum 
+Following \cite{lezh08} (2008), we take the dot product of the momentum 
 equation with the velocity $\vec{\upnu}$ and integrate over the whole 
 volume\footnote{Check: this is akin to looking at the power, force*velocity,  says Arie}:
 \[
@@ -2291,7 +2293,7 @@ Note that if the fluid is compressible then we have
 &=&  \int_V \frac{1}{\rho} \vec{\upnu} \cdot \vec{\nabla} \rho \; p \; dV = 0  
 \end{eqnarray}
 
-{\color{red} ToDo}:see section 3 of \textcite{lezh08} (2008) 
+{\color{red} ToDo}:see section 3 of \cite{lezh08} (2008) 
 where this is carried out with the Adams-Williamson eos.
 
 
@@ -2303,7 +2305,7 @@ where this is carried out with the Adams-Williamson eos.
 
 We start with the Reynolds transport 
 theorem\footnote{\url{https://en.wikipedia.org/wiki/Reynolds_transport_theorem}} 
-(see also p210 of \textcite{malvern}).
+(see also p210 of \cite{malvern}).
 Given any scalar quantity $B(\vec{r},t)$ associated with a moving fluid, 
 the general form of Reynolds transport theorem says 
 
@@ -2422,7 +2424,7 @@ we end up with
 - \underbrace{\int_S  \vec{q} \cdot \vec{n}  dS}_{{heatfluxboundary}} 
 \]
 
-In \textcite{zhyu96b} (1996) we find confirmation:
+In \cite{zhyu96b} (1996) we find confirmation:
 \begin{displayquote}
 {\color{darkgray}
 For infinite Prandtl number, it can be shown
@@ -2778,7 +2780,7 @@ distribution along vertical direction and obtain $\rho_r(z)=\exp(\gamma (1-z))$
 where $z$ is the nondimensional vertical coordinate.
 
 
-As explained in \textcite{lezh11} the discretised mass and momentum conservation
+As explained in \cite{lezh11} the discretised mass and momentum conservation
 equations yield the following matrix form:
 \[
 \begin{pmatrix}
@@ -2800,7 +2802,7 @@ $W$ shows the
 effects of dynamic pressure on the buoyancy force,
 and $X$ shows the effects of mantle compressibility
 
-Note that in \textcite{lezh11} so-called $Q_1\times Q_1$ 
+Note that in \cite{lezh11} so-called $Q_1\times Q_1$ 
 element pairs are used, and these need a stabilisation 
 term which in this case is the $D$ block.
 
@@ -2862,7 +2864,9 @@ The algorithm is then as follows:
 
 
 \newpage
-\printbibliography
+
+\bibliographystyle{apalike}
+\bibliography{biblio_lou.bib}
 
 \end{document}
 
