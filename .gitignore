@@ -1,3 +1,9 @@
 *.pdf
 *.log
 *.toc
+text.aux
+text.bbl
+text.bcf
+text.blg
+text.run.xml
+
